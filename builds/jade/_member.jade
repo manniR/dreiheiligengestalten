@@ -1,0 +1,19 @@
+mixin Member (name, description, email, phone, url)
+	.Member
+		.vcard
+			h3.Member__name.fn #{name}
+			if description
+				p.Member__description #{description}
+			//- script.
+			//- 	var mailname = email.match(/\w.+?(?=@)/g);
+			//- 	mailname = 'HELLO';
+			//- p= email.match(/\w.+?(?=@)/g)
+			//- email.split("@")[1]
+			span
+				a.Member__email.email(href="mailto:#{email}")= email.replace("@", "(at)")
+			//span.Member__email.email #{email} 
+			span.Member__phone.tel #{phone}
+			span
+				a.Member__url.url(href="http://www.#{url}") #{url}
+
+

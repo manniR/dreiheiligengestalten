@@ -1,0 +1,10 @@
+mixin Project (project)
+	.Project
+		.Project__wrapper
+			.Project__image
+				- var image = project.image
+				if image
+					img(src="#{image.src}" alt="#{image.alt}")
+			h3.Project__title #{project.title}
+			p.Project__description #{project.description}
+			span.Project__url.url #{project.url}

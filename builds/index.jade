@@ -1,0 +1,34 @@
+include ./jade/_member
+include ./jade/_project
+doctype html
+html(class='no-js')
+	header
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		h1 DreiHeiligenGestalten
+		p Kreativpool
+	section.Feature
+		figure.Imagegrid__wrapper
+			.Imagegrid__item
+				span.Grid--overlay sexy
+				img(src="img/01.jpg")
+		figure.Wrapper__vimeo
+			iframe(src="https://player.vimeo.com/video/173459125" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+	section.Members
+		+Member('Michael Carli', '', 'contactme@manfredraggl.com' ,'+43 676 9403704','manfredraggl.com')
+		+Member('Andreas Focke', '', 'contactme@manfredraggl.com' ,'+43 676 9403704','manfredraggl.com')
+		+Member('Günther Hofer', '', 'contactme@manfredraggl.com' ,'+43 676 9403704','manfredraggl.com')
+		+Member('Fabian Kametz', '', 'contactme@manfredraggl.com' ,'+43 676 9403704','manfredraggl.com')
+		+Member('Manfred Raggl', '', 'contactme@manfredraggl.com' ,'+43 676 9403704','manfredraggl.com')
+		+Member('Christian Reiter', '', 'contactme@manfredraggl.com' ,'+43 676 9403704','manfredraggl.com')
+		+Member('Simon Wint', '', 'contactme@manfredraggl.com' ,'+43 676 9403704','manfredraggl.com')
+
+	section.Projects
+		+Project({title: 'so sexy', image:{src:'img/01.jpg', alt:'sexy'}})
+		each val in [1,2,3,4,5,6]
+			.Grid
+				span.Grid--overlay= val
+					i.ion-ionic
+				img(src='http://loremflickr.com/960/540')
+

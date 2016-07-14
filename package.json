@@ -1,0 +1,38 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack",
+    "dev": "node_modules/.bin/webpack-dev-server --inline --colors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flickity": "^1.2.1",
+    "isotope-layout": "^3.0.1",
+    "masonry-layout": "^4.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "iconfonts": "^0.9.0",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "lost": "^7.0.3",
+    "postcss-loader": "^0.9.1",
+    "poststylus": "^0.2.3",
+    "pug": "^2.0.0-beta3",
+    "pug-html-loader": "^1.0.8",
+    "pug-static-loader": "0.0.1",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
